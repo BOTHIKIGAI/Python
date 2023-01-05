@@ -11,6 +11,7 @@
 /        /    /       /   /           /               /       /       /      /        /    /       /           /   /       /
 /         /   /////////   /////////   /////////       /       /       /      /         /   /////////   /////////   /       /
 
+
 La ruleta rusa es un juego de azar potencialmente mortal, que consiste en que un jugador coloque una o más balas dentro de un tambor de revólver, gire el cilindro (sin ver en dónde quedó el proyectil), coloque el 
 cañón en su sien y presione el gatillo. Se juega generalmente entre dos o más personas. El objetivo es sobrevivir y quedarse con el dinero o la especie de valor a jugar.
 
@@ -64,6 +65,17 @@ else:
     else:
         print ("A veces la ignorancia es mucho mas satisfactoria...")
 
-    
+    # pregunta 4 - El espacio de la bala - En que espacio deseas guardar la bala
 
+    pregunta4 = int(input("En que espacio del tambor desea guardar la bala? (debe ser un numero entre el 1 al 6): "))    
+
+    while pregunta4 <= 0 or pregunta4 >= 7:
+        if pregunta1 <= 0:
+            print ("Este numero ", pregunta4, " no es posible, puesto debe ser un numero entre el 1 al 6")
+            pregunta4 = int(input("En que espacio del tambor desea guardar la bala?"))
+        else:
+            print ("El numero" , pregunta4, " es muy grande")
+            pregunta4 = int(input("En que espacio del tambor desea guardar la bala? (debe ser un numero entre el 1 al 6): "))    
+    
+    # pregunta 5 - Ingresa 
     
