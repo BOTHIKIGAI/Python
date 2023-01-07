@@ -22,6 +22,7 @@ ellos le toque el cartucho y reciba el disparo.
 
 
 """
+import random
 
 # Pregunta 1 - Iniciamos el Juego
 
@@ -50,7 +51,14 @@ else:
         else:
             print ("El numero de participantes maximo es de 5")
             pregunta2 = int(input("Ingrese la cantidad de participantes, recuerda que debe ser un numero (max. 5): "))
-    print("")
+
+    if pregunta2 == 1:
+        print ("...Las mayores luchas son contra uno mismo, asi que espero que ganes")
+        print ("")
+    
+    # Ingresar los nombres de los participantes
+
+    
     
     # Pregunta 3 - Pregunta de Curiosdad - Porque el maximo es de 5 participantes
             
@@ -62,20 +70,42 @@ else:
     
     if pregunta3 == "Si":
         print ("La suerte termina en donde empieza...")
+        print ("")
     else:
         print ("A veces la ignorancia es mucho mas satisfactoria...")
+        print ("")
 
     # pregunta 4 - El espacio de la bala - En que espacio deseas guardar la bala
 
     pregunta4 = int(input("En que espacio del tambor desea guardar la bala? (debe ser un numero entre el 1 al 6): "))    
 
     while pregunta4 <= 0 or pregunta4 >= 7:
-        if pregunta1 <= 0:
+        if pregunta4 <= 0:
             print ("Este numero ", pregunta4, " no es posible, puesto debe ser un numero entre el 1 al 6")
-            pregunta4 = int(input("En que espacio del tambor desea guardar la bala?"))
+            pregunta4 = int(input("En que espacio del tambor desea guardar la bala? "))
         else:
             print ("El numero" , pregunta4, " es muy grande")
             pregunta4 = int(input("En que espacio del tambor desea guardar la bala? (debe ser un numero entre el 1 al 6): "))    
     
-    # pregunta 5 - Ingresa 
+    # Girar el tambor - crear una lista en base al numero en el cual se guardo la bala
+    # El espacio en el cual se guarda la bala cambia el espacio en el cual se encontrara despues de girar el tambor y detenerlo.
+
+    list_ubi_bullet = [pregunta4]
+
+    if list_ubi_bullet == [1]:
+        list_ubi_bullet = [1,2,3,4,5,6]
+    elif list_ubi_bullet == [2]:
+        list_ubi_bullet = [2,3,4,5,6,1]
+    elif list_ubi_bullet == [3]:
+        list_ubi_bullet = [3,4,5,6,1,2]
+    elif list_ubi_bullet == [4]:
+        list_ubi_bullet == [4,5,6,1,2,3]
+    elif list_ubi_bullet == [5]:
+        list_ubi_bullet == [5,6,1,2,3,4]
+    else:
+        list_ubi_bullet == [6,1,2,3,4,5]
     
+    print (list_ubi_bullet)
+
+    #list_ubi_bullet.append (1)
+    #print (list_ubi_bullet)
