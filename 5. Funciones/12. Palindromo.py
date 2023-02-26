@@ -1,10 +1,8 @@
-''''
+'''
 18 / 02 / 2023
-
 12. Escriba una funcion en python que compruebe si una cadena pasada es palindromo o no,
     Una palabra o frase que es palindromo se lee igual de izquierda a derecha que de
     derecha a izquierda. Por ejemplo, Ana, Anita lava la tina.
-
 '''
 
 def palindromo(word):
@@ -13,6 +11,7 @@ def palindromo(word):
 
     word_mayusculas = word.upper()
         # Hago que todas las letras esten e mayusculas para realizar la comparacion
+    
 
     list_a = []
         # list_a almacenara la palabra ingresada letra por letra
@@ -27,20 +26,26 @@ def palindromo(word):
             # La letra de la palabra se agregara a la lista
         list_b.insert(0, x)
             # La letra de la palabra se agregara, con la diferencia que la letra agregada al indice 0, por lo cual la palabra quedara al reves
-    
+
     print (list_a)
     print (list_b)
+
+    list_a_sin_espacios = [elem for elem in list_a if elem != " "]
+    list_b_sin_espacios = [elem for elem in list_b if elem != " "]
+
+    print (list_a_sin_espacios)
+    print (list_b_sin_espacios)
 
     c = 0
         # C permitira definir el indice que se comparara 
     z = True
         # Dar inicio al ciclo while
 
-    while z == True and c != len(list_a):
+    while z == True and c != len(list_a_sin_espacios):
 
             # El ciclo while se ejecutara siempre y cuando z sea True y c sea diferente a la cantidad de letras de la palabra agregada
 
-        if list_a[c] == list_b[c]:
+        if list_a_sin_espacios[c] == list_b_sin_espacios[c]:
             z = True
             c += 1
 
@@ -62,3 +67,5 @@ def palindromo(word):
 palindromo('Ana')
 palindromo('Anita lava la tina')
 palindromo ('Pelo')
+palindromo ("chaqueta")
+palindromo ("oso")
