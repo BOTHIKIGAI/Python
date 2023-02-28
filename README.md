@@ -1,3 +1,9 @@
 # Python
 
-Bienvenidos a mi repositorio de GitHub en el cual agregare los diferentes desafios que afronto para llegar aprender a usar python con maestria y fuerza, considero a python como uno de los mejores de lenduajes de programacion para desarrollar la logica computacional y empezar en el mundo del desarrollo de software. 
+1. Aprendizaje 
+
+  He subido todos los ejercicios que he logrado resolver para aprender a usar python 
+
+2. Aplicacion
+
+  Dentro de 2. Aplicacion se encuentra proyectos que he desarrollado por cuenta propia, desarrolle un asistente por comandos de voz y me encuentro finiquitando el juego    de la ruleta rusa
