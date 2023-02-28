@@ -12,8 +12,7 @@ import speech_recognition
     # speech_recognition libreria de reconocimiento de voz
 import pywhatkit
     # pywhatkit libreria para la reproduccion de video por medio de youtube y enviar mensajes a youtube
-import wikipedia
-    # wikipedia libreria para realizar busquedas en la pagina de esta misma 
+
 import datetime
     # datetime proporciona clases para manipular fechas y horas
 import calendar
@@ -144,27 +143,6 @@ while continuar == 1:
         pywhatkit.sendwhatmsg("+57", "Hola papa, como estas ?", hora, min)
         engine = pyttsx3.init()
         engine.say("Enviando mensaje papa")
-        engine.runAndWait()
-    
-    elif x == "buscar":
-        r = speech_recognition.Recognizer()
-        
-        with speech_recognition.Microphone() as source:
-            print("Di algo: ")
-            audio = r.listen(source)
-        
-        try:
-            texto = r.recognize_google(audio)
-            print ("Tu dijiste {}", format(texto)) 
-            x = (format(texto)) 
-
-        except:
-            print("Perdon no te puedo escuchar")
-        
-        wikipedia.search(format(texto))
-
-        engine = pyttsx3.init()
-        engine.say("Realizando busqueda ")
         engine.runAndWait()
 
     else:
