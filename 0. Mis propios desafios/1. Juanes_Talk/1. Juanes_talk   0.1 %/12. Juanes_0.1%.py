@@ -23,7 +23,7 @@ import webbrowser
 from playsound import playsound
     # playsound para reproducir un audio
 
-playsound('y2mate.com - Microsoft Windows XP sonido de inicio.mp3')
+playsound('Microsoft Windows XP sonido de inicio.mp3')
 
 
 engine = pyttsx3.init()
@@ -161,7 +161,7 @@ while continuar == 1:
         except:
             print("Perdon no te puedo escuchar")
         
-        print wikipedia.summary(format(texto))
+        wikipedia.search(format(texto))
 
         engine = pyttsx3.init()
         engine.say("Realizando busqueda ")
