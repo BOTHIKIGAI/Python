@@ -20,6 +20,7 @@ import calendar
 import webbrowser
     # webbrowser es un navegador web, haciendo uso de la funcion open()
 from playsound import playsound
+    # playsound para reproducir un audio
 
 playsound('y2mate.com - Microsoft Windows XP sonido de inicio.mp3')
 
