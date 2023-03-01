@@ -1,0 +1,3 @@
+def palabra_min(palabra):
+    palabra = palabra.lower()
+    print(palabra)
