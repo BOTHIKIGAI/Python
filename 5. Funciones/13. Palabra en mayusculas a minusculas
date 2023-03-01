@@ -1,3 +1,9 @@
 def palabra_min(palabra):
+        # Defino la funcion bajo el nombre de palabra_min y solicito que el dato a procesar se llamara palabra
     palabra = palabra.lower()
+        # creo una variable la cual ejectuara el metodo .lower para convertir las letras en mayusculas a minusculas
     print(palabra)
+        # imprimo la palabra 
+
+palabra = str(input("Palabra: "))
+palabra_min(palabra)
