@@ -1,0 +1,25 @@
+''''
+
+10 / 03 / 2023
+
+Ejercicio #6
+https://aprendeconalf.es/docencia/python/ejercicios/tipos-datos/
+
+Escribir un programa que lea un entero positivo, n, introducido por el usuario y después muestre en pantalla 
+la suma de todos los enteros desde 1 hasta n. La suma de los n primeros enteros positivos puede ser calculada de 
+la siguiente forma:
+
+
+'''
+
+n = int(input("Ingrese un numero entero: "))
+    # Escribir un programa que lea un entero positivo
+
+sum = n * (n + 1 ) / 2
+    # Explicacion de la formula - Formula de Gauss
+
+    # Se toma el valor de n, que es el ultimo numero natural despues de n
+    # Se multiplica n por n + 1, que es el siguiente numero natural despues de n
+    # Se divide el resultado por 2, que es la mitad de los numeros naturales que se estan sumando
+
+print ("La suma de los", n, "primeros numeros enteros es igual a", sum)

@@ -1,0 +1,22 @@
+"""
+11 / 03 / 2023
+
+Ejercicio #7
+https://aprendeconalf.es/docencia/python/ejercicios/tipos-datos/
+
+Escribe un programa que pida al usuario su peso en (kg) y estatura (en metros), calcule el indice de masa corporal
+y lo almacene en una variable, y muestre por pantalla la frase "Tu indice de masa corporal es <IMC> donde <IMC>
+es el indice de masa corporal calculando con dos decimales. 
+
+Investigacion
+El IMC (Indice de masa corporal) se obtiene mediante la division del peso 
+
+"""
+peso = (float(input("Ingrese el peso (kg): ")))
+altura = (float(input("Ingrese su altura (metros): ")))
+
+IMC = peso / (altura**2)
+
+print ('Su IMC es: {}'.format (round(IMC,2)))
+    # Imprimir el IMC con la funcion round, especificando la cantidad de decimales a imprimir
+

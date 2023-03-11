@@ -1,0 +1,22 @@
+'''
+10 / 03 / 2023
+
+Ejercicio #5
+https://aprendeconalf.es/docencia/python/ejercicios/tipos-datos/
+
+Se debe realizar una operacion siguiendo las reglas de la operacion aritmetica
+
+1. Parentesis y otros signos de agrupacion como los corchetes
+2. Exponentes
+3. Raiz
+4. Multiplicacion
+5. Division
+6. Adiciones
+7. Sustraciones
+
+'''
+
+x = ((3 + 2) / (2 * 5))**2
+    # El factor determinante es el de usar correctamente los parentesis
+print (x)
+
