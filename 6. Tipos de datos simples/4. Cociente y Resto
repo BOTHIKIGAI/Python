@@ -1,0 +1,26 @@
+"""
+11 / 03 / 2023
+
+Ejercicio 8
+https://aprendeconalf.es/docencia/python/ejercicios/tipos-datos/
+
+Escribir un programa que pida al usuario dos numeros enteros y muestre por pantalla <n> entre <m> da un cociente
+<c> y un resto <r> donde <n> y <m> son los numeros introducidos por el usuario, y <c> y <r> son el cociente y el
+resto de la division entera respectivamente.
+
+Investigacion
+1. El cociente es conoce como el resultado al que se llega tras dividir un numero por otro
+2. El resto o residuo de una division es el numero de una division que queda cuando la division no es exacta
+
+Requisitos
+1. Ingresar dos numeros enteros
+2. Que en pantalla se imprima la division, el resultado del cociente y el resto o residuo de la division
+"""
+n = int(input("Ingrese el dividendo: "))
+m = int(input("Ingrese el cociente: "))
+
+print (n,"/",m)
+
+print ("El conciente es", n/m, "y el restante es",n%m)
+    # El operador aritmetico / hace la division dandonos en la salida el cociente
+    # El operador aritmetico % hace la division dandonos en la salida el residuo
