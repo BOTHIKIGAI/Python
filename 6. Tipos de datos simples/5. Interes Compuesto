@@ -1,0 +1,38 @@
+'''
+10 / 23 / 2023
+
+Ejercicio 9
+https://aprendeconalf.es/docencia/python/ejercicios/tipos-datos/
+
+Escribir un programa que pregunte al usuario una cantidad a invertir, el interes anual y el numero de años,
+y muestro por pantalla el capital obtenido en la inversion.
+
+Requisitos
+1. Cantidad invertir
+2. Interes anual
+3. Numero de años 
+
+Investigacion
+1. Es una calculadora de interes lo que se busca crear
+2. El interes compuesto es el interes de un capital al que se van acumulando sus creditos o intereses para que
+produzcan otros.
+3. Formula
+    capital final = capital inicial ( 1 + tasa de interes (anual) ) ^ periodo de ahorro (años)
+
+    formula obtenida de:
+        https://enciclopediaeconomica.com/interes-compuesto/
+
+'''
+
+print ("Calculadora de interes compuesto")
+
+ci = float(input("Ingrese la cantidad a invertir: $"))
+    # ci es capital inicial o cantidad a invertir
+ti = float(input("Ingrese la tasa de interes (anual): "))
+pa = float(input("Ingrese el periodo de ahorro (anual): "))
+    # La variable pa (periodo de ahorro) la dejo en float, porque los meses se 
+    # puede expresar en anual tambien, ejm: 1.5 son 1 año y seis meses
+
+cf = ci * (1.0 + ti) ** pa
+print ("Con un capital inicial de $", ci, "y un un interes anual de", ti, "durante", pa, "años, se obtendra un capital final de $", int(cf))
+
