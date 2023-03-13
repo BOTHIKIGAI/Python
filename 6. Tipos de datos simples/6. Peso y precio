@@ -1,0 +1,34 @@
+'''
+13 / 03 / 2023
+
+Ejercicio 10
+https://aprendeconalf.es/docencia/python/ejercicios/tipos-datos/
+
+Una juguetería tiene mucho éxito en dos de sus productos: payasos y muñecas. Suele hacer venta por correo 
+y la empresa de logística les cobra por peso de cada paquete así que deben calcular el peso de los payasos 
+y muñecas que saldrán en cada paquete a demanda. Cada payaso pesa 112 g y cada muñeca 75 g. Escribir un 
+programa que lea el número de payasos y muñecas vendidos en el último pedido y calcule el peso total del 
+paquete que será enviado.
+
+Requisitos
+1. Cantidad de payasos
+2. Cantidad de muñecas
+3. Calcular el peso total
+
+'''
+
+payasos = int(input("Ingrese la cantidad de payasos vendidos: "))
+muñecas = int(input("Ingrese la cantidad de muñecas vendidas: "))
+    # solicito que ingrese la cantidad de cada producto
+
+peso_total = (payasos * 112) + (muñecas * 75)
+    # realizo la operacion de multiplicar la cantidad de producto con el peso, luego lo sumo directamente 
+
+peso_total_formato = format(peso_total,",").replace(",",".")
+    # Cuando imprimia el dato de peso total se imprimia sin punto, aquello podia confundir al vendedor de la tienda
+    # puesto que un deato que diga 2130 g no es tan claro como uno con punto 2.130 g
+
+print ("El peso total de los",payasos,"payasos y",muñecas,"muñecas es igual a", peso_total_formato, "g")
+
+# En stackoverflow encontre la manera de cambiar el formato de la variable "peso_total"
+# https://stackoverflow.com/questions/19544620/how-to-place-dots-into-the-number-with-python
