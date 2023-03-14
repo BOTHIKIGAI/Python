@@ -1,0 +1,48 @@
+'''
+14 / 03 / 2023
+
+Ejercicio 11
+https://aprendeconalf.es/docencia/python/ejercicios/tipos-datos/
+
+Imagina que acabas de abrir una nueva cuenta de ahorros que te ofrece el 4% de interes al año. Estos ahorros
+debido a intereses, que no se cobran hasta finales del año. se te añaden al balance final de tu cuenta de ahorros.
+Escribir un programa que comience leyendo la cantidad de dinero despositada en la cuenta de ahorros, introducida
+por el usuario. Despues el programa debe calcular y mostrar por pantalla la cantidad de ahorros tras el primer,
+segundo y tercer años. Redondear cantidad a dos decimales.
+
+Datos
+1. 4% de intereses al año
+2. A final de año se cobran los intereses y se añaden a la cuenta de ahorros
+
+Requisitos
+1. Ingresar la cantidad de dinero depositada
+2. Calcular la cantidad de ahorros tras el primer, segundo y tercer años
+3. Redondear cantidad a dos decimales
+
+'''
+
+dineroDepositar = float(input("Ingrese la cantidad de dinero a depositar: "))
+
+año1 = 4 / 100 * dineroDepositar 
+    # Primero se realiza la division, luego la multiplicacion, a este tipo de operacion se le conoce como calculo de porcentaje
+    # https://www.bing.com/videos/search?q=c%c3%a1lculo+de+porcentaje&docid=608029668806712545&mid=5440189A03F15745EA475440189A03F15745EA47&view=detail&FORM=VIRE
+
+dineroDepositar += año1
+    # Realizo la suma de los intereses obtenidos el primer año
+
+print ('')
+print ('Con un depisto de $',dineroDepositar,"y un interes del 4% se habra obtenido ${}". format (round(año1,2)), 'en el primer año')
+    # ...({}". format (round(año1,2)))) me permite indicarle que el dato a imprimir se redondee y quede con dos decimales
+
+año2 = 4 / 100 * dineroDepositar 
+dineroDepositar += año2
+print ('')
+print ('Con la sumatoria del deposito y de lo obtenido en el primer año ${}'.format(round(dineroDepositar,2)),"y un interes del 4% se habra obtenido ${}". format (round(año2,2)), 'en el segundo año')
+
+año3 = 4 / 100 * dineroDepositar 
+dineroDepositar += año3
+print ('')
+print ('Con la sumatoria del deposito y de lo obtenido en el primer y segundo año ${}'.format(round(dineroDepositar,2)),"y un interes del 4% se habra obtenido ${}". format (round(año3,2)), 'en el tercer año')
+total = dineroDepositar + año3
+print ('En total habra ganado ${}'.format(round(total,2)))
+print('')
