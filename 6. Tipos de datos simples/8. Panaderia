@@ -1,0 +1,19 @@
+"""
+13 / 04 / 2023
+
+Ejercicio 12
+https://aprendeconalf.es/docencia/python/ejercicios/tipos-datos/
+
+Una panadería vende barras de pan a 3.49€ cada una. El pan que no es el día tiene un descuento del 60%. 
+Escribir un programa que comience leyendo el número de barras vendidas que no son del día. Después el programa 
+debe mostrar el precio habitual de una barra de pan, el descuento que se le hace por no ser fresca y el coste 
+final total.
+
+Datos
+1. Precio barra de pan = 3.49€
+2. El pa que no es el del dia tiene un descuento del 60%
+
+Requisitos
+1. Crear un programa que comience leyendo el numero de barras vendidas que no son del dia
+    ~ Entrada cantidad dinero
+"""
