@@ -15,5 +15,32 @@ Datos
 
 Requisitos
 1. Crear un programa que comience leyendo el numero de barras vendidas que no son del dia
-    ~ Entrada cantidad dinero
+    ~ Entrada cantidad de barras vendidas que no son del dia
+2. Mostrar el precio habitual de una barra de pan
+3. Mostrar el descuento que se le hace por no ser fresca
+4. El coste final
+    ~ Salida "Factura"
+
 """
+
+precioBarraPan = 3.49
+    # Registro el precio de una barra de pan del dia
+
+numBarraPanNoDia = int(input("Ingrese la cantidad de barras de pan que no son del dia que se vendieron: "))
+    # Se ingresa la cantidad de barras de pan que no son del dia que se vendieron
+
+print ("El precio habitual de una barra de pan es de", precioBarraPan, "€")
+    # Imprimo el precio habitual de la barra de pan
+
+print ("El descuento que se le hace a una barra de pan por no ser fresca es del 60%")
+    # Imprimo el porcentaje de descuento que se le hara a la barras que no son del dia
+
+precioTotalBarraPanNoDia = (precioBarraPan * numBarraPanNoDia) * (1 - 0.6)
+    # "precioBarraPan * numBarraPanNoDia" son el precio original
+    # "(1 - 0.6)" es una operacion para obtener el factor de descuento. Por ejemplo, si el descuento es del 10%, entonces el factor de descuento seria 1 - 0.1 = 0.9
+
+print ("Precio total sin descuento es de {}". format (round(precioBarraPan * numBarraPanNoDia,2)), "€")
+    # Imprimo el precio total sin descuento y redondeandolo a dos cifras
+
+print ("El balance total con descuento es de {}". format (round (precioTotalBarraPanNoDia,2)), "€")
+    # Imprimio el total con descuento y rendondeandolo a dos cifras
