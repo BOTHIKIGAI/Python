@@ -1,0 +1,17 @@
+'''
+14 / 04 / 2023
+
+Ejercicio 1
+Escribir un programa que pregunte el nombre del usuario en la consola y un número entero e imprima por pantalla en líneas distintas 
+el nombre del usuario tantas veces como el número introducido.
+
+Datos
+1. Nombre del usuario
+2. Veces en la cual se debe imprimir el nombre
+
+Requisitos
+1. Imprimir el nombre del usuario x veces el lo indique
+    ~ Entrada nombre
+    ~ Entrada veces que el nombre se debe repetir
+    
+'''
