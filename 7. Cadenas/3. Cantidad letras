@@ -1,0 +1,42 @@
+"""
+17 / 04 / 2023
+
+Ejercicio 3
+Escribir un programa que pregunte el nombre del usuario en la consola y después de que el usuario lo introduzca 
+muestre por pantalla <NOMBRE> tiene <n> letras, donde <NOMBRE> es el nombre de usuario en mayúsculas y <n> es el 
+número de letras que tienen el nombre.
+
+https://aprendeconalf.es/docencia/python/ejercicios/cadenas/#ejercicio-3
+
+Datos
+1. Nombre
+
+Requisitos
+1. Solicitar nombre
+2. Entrada nombre
+3. Cantidad de letras
+4. Salida nombre en mayusculas y cantidad de letras
+
+"""
+
+nombre = str(input("Ingrese su nombre: "))
+    # La variable "nombre" solicita al usuario ingresar su nombre
+
+cantidadLetras = len(nombre.replace(' ', ''))
+    # En la variables "cantidadLetras" se almacenara la cantidad de letras de la variable "nombre"
+    # Para contar la cantidad de letras se usa el metodo len, el cual retorna el numero de items en un objeto, en este caso el numero de letras de la palabras
+    # Para ignorar los espacios utilice el metodo replace, el cual remplaza o elimina los espacios
+
+print (nombre.upper(), 'tiene', cantidadLetras , 'letras')
+    # Imprimio el nombre en mayuscula como se solicito en los requerimientos y tambien imprimo la cantidad de letras
+
+"""
+Webgrafia
+
+Metodo replace
+https://www.w3schools.com/python/ref_string_replace.asp
+
+Metodo len
+https://www.w3schools.com/python/ref_func_len.asp
+
+"""
