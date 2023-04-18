@@ -1,0 +1,48 @@
+'''
+18 / 04 / 2023
+
+Ejercicio 4
+Los teléfonos de una empresa tienen el siguiente formato prefijo-número-extension donde el prefijo es el código 
+del país +34, y la extensión tiene dos dígitos (por ejemplo +34-913724710-56). Escribir un programa que pregunte 
+por un número de teléfono con este formato y muestre por pantalla el número de teléfono sin el prefijo y la extensión.
+
+https://aprendeconalf.es/docencia/python/ejercicios/cadenas/#ejercicio-4
+
+Datos
+1. Numero con prefijo y extension
+
+Requisitos
+1. Entrada de numero con prefijo y extension
+2. Eliminar o imprimir unicamente el numeor sin prefijo y extension
+3. Salida numero
+
+'''
+
+numero = str(input('Ingrese el numero con prefijo y extension: '))
+    # La variable numero almacenara el numero con prefijo y extension
+
+numero = (numero.replace(' ', ''))
+    # Elimino los espacio por si el usuario dejo espacios, para obtener unicamente el numero
+
+numero = (numero.replace('+34-', ''))
+    # Remplazo el prefijo previamente definido y lo elimino
+
+numeroInvertido = numero[::-1]
+    # Invierto al cadena para empezar a eliminar la extension desde el inicio
+
+letra = '-'
+    # La variable "letra" almacena el caracter guion o linea
+
+while letra in numeroInvertido:
+    # Creo un ciclo while el cual se repetira mientras la variable "letra" se encuentre en la cadena de la variable "numeroInvertido"
+    numeroInvertido = (numeroInvertido.replace(numeroInvertido[0], ''))
+        # Si el ciclo es True se ejecutara la linea 38, de lo contrario pasara a la linea 42
+        # La variable "numeroInvertido" almacena el numero el cual es procesado cada vez, eliminando el primer caracter hasta que el ciclo no se cumpla
+
+
+numero = numeroInvertido[::-1]
+    # Cuando el ciclo termine y la variable "numeroInvertido" no contenga el caracter "-" (guion o linea) se invertira nuevamente el numero para que vuelva a su orden inicial
+
+
+print (numero)
+    # Se imprime el numero sin prefijo ni extension
