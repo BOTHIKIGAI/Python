@@ -1,0 +1,24 @@
+'''
+19 / 04 / 2023
+
+Escribir un programa que pida al usuario que introduzca una frase en la consola y muestre por pantalla la 
+frase invertida.
+
+https://aprendeconalf.es/docencia/python/ejercicios/cadenas/#ejercicio-5
+
+Datos
+1. Frase
+
+Requisitos
+1. Invertir frase
+2. Imprimir la frase invertida en la consola
+
+'''
+
+frase = str(input("Ingrese una frase: "))
+    # En la variable "frase" almaceno la frase del usuario
+
+print(frase[::-1])
+    # "frase" es la variable que contiene la cadena de texto
+    # Los dos puntos indican que deseo seleccionar todos los caracteres de la cadena de texto
+    # "-1" indica que deseo invertir el orden de los caracteres
