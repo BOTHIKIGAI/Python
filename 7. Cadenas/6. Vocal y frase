@@ -1,0 +1,43 @@
+"""
+20 / 08 / 2023
+
+Escribir un programa que pida al usuario que introduzca una frase en la consola y una vocal, y después 
+muestre por pantalla la misma frase pero con la vocal introducida en mayúscula
+
+https://aprendeconalf.es/docencia/python/ejercicios/cadenas/#ejercicio-6
+
+Datos
+1. Frase
+2. Vocal
+
+Requisitos
+1. La vocal seleccionada debera buscarse en la frase y las vocales que se relacionen con la vocal ingresada
+   deberan estar en mayuscula
+2. Imprimir la palabra con las vocales en mayusculas
+
+"""
+
+frase = str(input("Ingrese la frase: "))
+    # En la variable "frase" se almacenara la frase
+
+vocal = str(input("Ingrese la vocal: "))
+    # En la variable "vocal" se almacenara la vocal
+
+if vocal in frase:
+    # Con un ciclo if determino si dentro de la variable "frase" (cadena de texto) se encuentra la variable "vocal" (caracter)
+    
+    vocalMayusculas = vocal.upper()
+        # La variable "vocalMayusculas" almacenara la vocal en mayuscula, para hacer esto uso el metodo upper
+
+    frase = (frase.replace(vocal,vocalMayusculas))
+        # Dentro de la variable "frase" se proceso el requisito de buscar dentro de la variable "frase" mediante el metodo replace
+        # la vocal, remplazando la vocal en minusculas por la vocal en mayuscula que se encuentra en la variable "vocalMayuscula"
+    
+    print (frase)
+        # Imprimo la frase
+
+else:
+
+    # En cuyo caso la variable "vocal" (caracter) no se encuentre dentro de la variable "frase" se imprimira el siguiente mensaje
+    print("Dentro de la frase que ingresaste no se encuentra la vocal", vocal)
+        
