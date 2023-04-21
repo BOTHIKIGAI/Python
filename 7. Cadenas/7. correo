@@ -1,0 +1,56 @@
+'''
+21 / 04 / 2023
+
+Escribir un programa que pregunte el correo electrónico del usuario en la consola y muestre por pantalla 
+otro correo electrónico con el mismo nombre (la parte delante de la arroba @) pero con dominio ceu.es.
+
+https://aprendeconalf.es/docencia/python/ejercicios/cadenas/#ejercicio-7
+
+Datos
+1. correo ingresado por el usuario
+2. dominio correo ceu.es
+
+Requisitos
+1. Ingresar correo
+2. Remplazar el dominio del correo original por @ceu.es
+3. Imprimir en pantalla el nuevo correo
+
+'''
+
+correo = str(input('Ingrese el correo: '))
+    # La variable "correo" almacenara el correo que ingresara el usuario
+print (correo)
+    # Imprimo el correo para conocer el antes y el despues
+
+indiceArroba = correo.index('@')
+    # La variable "indiceArroba" almacenara el indice en el cual se encuentra el caracter '@' dentro de la cadena de texto de la variable 'correo'
+    # Para conseguir el indice del '@' se usa el metodo index, el cual devuelve el indice de nuestro interes
+
+indiceFinal = len(correo)
+    # La variable "indiceFinal" almacenara el indice final de la cadena de texto de la variable "correo"
+    # Para conseguir el indice final se usa el metodo len, el cual devuelve en dato int la cantidad de caracteres
+
+dominioCorreo = '@ceu.es'
+    # La variable "dominioCorreo" almacenara el dominio del correo que se usara para remplazar el dominio del correo original
+
+correo = correo[:indiceArroba] + dominioCorreo + correo[indiceFinal+1:]
+    # La variable "correo[:indiceArroba]" devuleve una subcadena que contiene todos los caracteres desde el inicoo de la cadena hasta el indice en el cual esta el arroba.
+    # La variable "dominioCorreo" contiene el dominio de correo que remplazara el original
+    # La variable "correo[indiceFinal+1:]" devuelve una subcadena que contiene todos los caracteres desde el indice "indiceFinal + 1" hasta el final
+    # El operador "+" permite concatenar las tres subcadenas de las tres variables que acabo de explicar, formando una nueva cadena que contiene los caracteres originales reemplazados por la cadena "dominioCorreo"
+
+
+print(correo)
+
+'''
+Webgrafia
+
+1. Remplazar caracteres mediante rango de indices
+
+    https://www.delftstack.com/es/howto/python/python-replace-character-in-string-at-index/
+
+'''
+
+
+    
+    
