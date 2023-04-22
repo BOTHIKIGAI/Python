@@ -1,0 +1,35 @@
+'''
+21 / 04 / 2023
+
+Escribir un programa que pregunte por consola el precio de un producto en euros con dos decimales y muestre 
+por pantalla el número de euros y el número de céntimos del precio introducido.
+
+https://aprendeconalf.es/docencia/python/ejercicios/cadenas/#ejercicio-8
+
+Datos
+1. precio producto
+
+Requisitos
+1. Entrada precio producto en euros (y con decimales)
+2. Procesar precio, dividiendo euros y decimales
+3. Salida euros
+4. Salida decimales
+
+'''
+
+precio = str(input('Ingresa el valor del producto € '))
+    # Variable "precio" almacenara el precio del producto como un dato string, para haci obtener el indice del punto
+
+punto = precio.index('.')
+    # Meditane el metodo index consigo el indice del punto, para haci dividir cada parte
+
+euro = precio[:punto]
+    # Variable "euro" almacenara los caracteres que estan a la derecha del indice del punto
+
+decimales = ('0') + precio[punto:]
+    # Variable "decimales" almacenara los caracteres que estan a la izquierda del indice del punto
+    # agrego ('0') con + para unir los decimales, brindando el dato en dinero
+
+print ("€",euro)
+print ("€",decimales)
+    # imprimo los requerimiento
