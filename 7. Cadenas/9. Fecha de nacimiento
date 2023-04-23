@@ -1,0 +1,46 @@
+'''
+23 / 04 / 2023
+
+Escribir un programa que pregunte al usuario la fecha de su nacimiento en formato dd/mm/aaaa y muestra por 
+pantalla, el día, el mes y el año. Adaptar el programa anterior para que también funcione cuando el día o el 
+mes se introduzcan con un solo carácter.
+
+https://aprendeconalf.es/docencia/python/ejercicios/cadenas/#ejercicio-9
+
+Datos
+1. Fecha de nacimiento
+
+Requisitos
+1. Entrada fecha de nacimiento en formato 23 / 04 / 2023
+3. Que la fecha funcione sin importar que se ingresada con un solo numero
+4. Salida de fecha en texto
+
+'''
+
+import re
+    # Libreria re es el modulo de expresiones regulares de Python, estas son patrones que se utilizan para biscar y manipular cadenas de texto.
+
+fecha = str(input('Ingresa tu fecha de nacimiento (dd/mm/aaaa): '))
+    # Variable "fecha" contiene la fecha en formato dd/mm/aaaa
+
+fecha = fecha.replace(' ', '')
+    # Dentro de la variable "fecha" elimino los espacios para tener un dato limpio mediante el metodo replace
+
+indices = [match.start() for match in re.finditer('/', fecha)]
+    # math es el nombre la variable que se esta utilizando para representar cada objeto (en este caso caracter) de coincidencia devuelto por la funcion finditer()
+    # start es un metodo del objeto de coincidencia que devuelve el indice donde comienza la coincidencia en la cadena
+    # for math in re.finder (caracter ('/'), cadena('fecha')) es un bucle for que itera sobre cada objeto de coincidencia devuelto por la funcion finditer()
+    # La funcion 'finditer' de la libreria 're', buscando todas las apariciones de un caracter dentro de una cadena de texto
+    # Variable "indices" almacena los indices en donde esta el ' / ' (slash)
+
+
+print ( 'Naciste el dia', fecha[:indices[0]], 'durante el mes', fecha[indices[0]+1:indices[1]], 'en el año', fecha[indices[1]+1:])
+
+'''
+Webgrafia
+
+1. https://www.delftstack.com/es/howto/python/python-find-all-indexes-of-a-character-in-string/
+
+    En la siguiente pagina encontre la manera de encontrar diferentes indices de un caracter dentro de una cadena de texto
+
+'''
