@@ -1,0 +1,25 @@
+'''
+24 / 04 / 2023
+
+Escribir un programa que pregunte por consola por los productos de una cesta de la compra, separados 
+por comas, y muestre por pantalla cada uno de los productos en una línea distinta.
+
+Datos
+1. Productos de la cesta
+
+Requistos
+1. Los productos deben estar separadas por comas
+2. Ingresar productos
+3. Salida producto separado por reglon o linea
+
+
+'''
+
+import re
+    # Libreria re es el modulo de expresiones regulares de Python, estas son patrones que se utilizan para biscar y manipular cadenas de texto.
+
+productos = str(input('Ingresa los productos: '))
+    # La variable "productos" almacena los productos separados por comas
+
+print(productos.replace(',', '\n'))
+    # Mediante el metodo replace se remplaza la coma por un salto de linea mediante '\n)
