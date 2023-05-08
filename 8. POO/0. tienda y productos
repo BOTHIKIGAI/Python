@@ -1,0 +1,74 @@
+class smartBand:
+
+    # constructor
+
+    def __init__(self):
+        self.dimensiones = "46.5 mm x 20.7 mm x 12.25 mm"
+        self.condicionProducto = "nuevo"
+        self.materialCorrea = "plastico"
+        self.sku = "XI310EL11PKEHLCO"
+        self.garantiaProducto = "3 meses"
+        self.tamañoPantalla = "1.62"
+        self.paisOrigen = "China"
+        self.tecnologiaPantalla = "Amoled"
+        self.resistenciaAgua = "No"
+        self.peso = 1
+        self.contenidoCaja = "Cable dedicado ×1, Manual de instrucciones ×1"
+        self.materialDispositivo = "Aleacion de aluminio"
+
+    # metodos
+
+    def analisisEntrenamiento(self):
+        print("**********************************************")
+        print("Cuando empieces a entrenar la smartband registrara tu entrenamiento y los datos")
+        print("**********************************************")
+    
+    def seguimientoSpO2(self):
+        print("**********************************************")
+        print("Se medira la cantidad de sangre que esta disponible en la sangre")
+        print("**********************************************")
+
+    def alertas(self):
+        print("**********************************************")
+        print("Se vinculara con su celular y le notificara sobre alarmas del celular o de entrenamiento.")
+        print("**********************************************")
+    
+    def monitorizacionSueño(self):
+        print("**********************************************")
+        print("Cuando empieze a dormir, la pulsera lo sabra y registrara la calidad del sueño y sus fases")
+        print("**********************************************")
+
+    def monitorizacionFrecuenciaCardiaca(self):
+        print("**********************************************")
+        print("Cuando empieze a dormir, la pulsera lo sabra y registrara la calidad del sueño y sus fases")
+        print("**********************************************")
+
+    def monitorizacionEstres(self):
+        print("**********************************************")
+        print("Podra saber su nivel de estres y si este es sano o no.")
+        print("**********************************************")
+
+    def monitorizacionFemenina(self):
+        print("**********************************************")
+        print("Brindara datos sobre el estado de la mujer durante la mestruacion")
+        print("**********************************************")
+
+
+# instanciar un objeto
+band = smartBand()
+
+print ("Las dimensiones del dispositivo son ", band.dimensiones)
+print ("El estado del producto es ", band.nuevo)
+print ("El material de la correa es", band.plastico)
+print ("El codigo SKU es ", band.sku)
+print ("El producto tiene ", band.garantiaProducto)
+print ("El tamaño de la pantalla es de ", band.tamañoPantalla)
+print ("El pais donde fue producido fue " , band.paisOrigen)
+print ("La pantalla es una ", band.tecnologiaPantalla)
+print ("El producto " , band.resistenciaAgua, "es resistente al agua")
+print ("Tiene un peso de ", band.peso, "kg")
+print ("La caja trae " , band.contenidoCaja)
+print ("La smart band esta hecha de ", band.materialDispositivo)
+
+
+
