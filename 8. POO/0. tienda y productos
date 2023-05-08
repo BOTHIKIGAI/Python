@@ -1,3 +1,6 @@
+
+# Producto : SmartBand
+
 class smartBand:
 
     # constructor
@@ -24,32 +27,27 @@ class smartBand:
         print("**********************************************")
     
     def seguimientoSpO2(self):
-        print("**********************************************")
         print("Se medira la cantidad de sangre que esta disponible en la sangre")
         print("**********************************************")
 
     def alertas(self):
-        print("**********************************************")
         print("Se vinculara con su celular y le notificara sobre alarmas del celular o de entrenamiento.")
         print("**********************************************")
     
     def monitorizacionSueño(self):
-        print("**********************************************")
         print("Cuando empieze a dormir, la pulsera lo sabra y registrara la calidad del sueño y sus fases")
         print("**********************************************")
 
     def monitorizacionFrecuenciaCardiaca(self):
-        print("**********************************************")
         print("Cuando empieze a dormir, la pulsera lo sabra y registrara la calidad del sueño y sus fases")
         print("**********************************************")
 
     def monitorizacionEstres(self):
-        print("**********************************************")
         print("Podra saber su nivel de estres y si este es sano o no.")
         print("**********************************************")
 
     def monitorizacionFemenina(self):
-        print("**********************************************")
+
         print("Brindara datos sobre el estado de la mujer durante la mestruacion")
         print("**********************************************")
 
@@ -58,8 +56,8 @@ class smartBand:
 band = smartBand()
 
 print ("Las dimensiones del dispositivo son ", band.dimensiones)
-print ("El estado del producto es ", band.nuevo)
-print ("El material de la correa es", band.plastico)
+print ("El estado del producto es ", band.condicionProducto)
+print ("El material de la correa es", band.materialCorrea)
 print ("El codigo SKU es ", band.sku)
 print ("El producto tiene ", band.garantiaProducto)
 print ("El tamaño de la pantalla es de ", band.tamañoPantalla)
@@ -70,5 +68,149 @@ print ("Tiene un peso de ", band.peso, "kg")
 print ("La caja trae " , band.contenidoCaja)
 print ("La smart band esta hecha de ", band.materialDispositivo)
 
+# metodos
+
+print ('')
+print (band.analisisEntrenamiento())
+print (band.seguimientoSpO2())
+print (band.alertas())
+print (band.monitorizacionSueño())
+print (band.monitorizacionFrecuenciaCardiaca())
+print (band.monitorizacionEstres())
+print (band.monitorizacionFemenina())
+
+
+# Producto: Bicicleta
+
+
+class bicicleta:
+
+    #constructor
+
+    def __init__(self):
+        self.marco = "RoadMaster Hurricane 29 Acero Inoxidable"
+        self.tenedor = "Acero RoadMaster 28.6 * 25.4* "
+        self.suspencion = "Bloqueo al Hombro"
+        self.manubrio = "RoadMaster Swallow 22.2*640MM"
+        self.agarresManubrio = "RoadMaster en PVC  22.2,120mm"
+        self.llantas = "WandaKing en caucho 29 x 2.125 "
+        self.rines = "29 Aluminio Doble Pared"
+        self.bujeDelanterio = "MingYang en Acero MY-308F"
+        self.bujeTrasero = "MingYang en Acero MY-308R"
+        self.manzana = "Acero Sellado RoadMaster 68/113.5"
+        self.triplato = "Acero HongFa con Cobertura Negra"
+        self.relacionTriplato = "24/34/42 Dientes"
+        self.cadena = "RoadMaster 1/2*3/32*112L, 7Velocidades"
+        self.pedales = "Plasticos con Reflectivos Medida 9/16"
+        self.frenos = "Disco en Aluminio Llanta delantera y trasera"
+        self.manecillaFreno = "RoadMaster Aleacion en Aluminio"
+        self.pacha = "Shimano TZ21 7Velocidades 14-28T Index"
+        self.asiento = "Antiprostatico RoadMaster"
+        self.posteAsiento = "Acero 28,6*1.2T*250mm"
+        self.descarriladorTrasero = "Shimano TZ30 - Shimano TZ30 Index"
+        self.tensorTrasero = "Shimano TZ50 -  Shimano TZ30 Index"
+        self.manecillaIzquierda = "Shimano RS35 RevoShift EasyGrip ( Shimano RevoShift Tipo Moto) "
+        self.modelo = "HS-WH-B-012-1A"
+        self.material = "Acero" 
+        self.garantiaProducto = "3 meses"
+
+    # metodos
+
+    def acelerar(self):
+        print("**********************************************")
+        print("La bicicleta puede avanzar dependiendo de la inclinacion")
+        print("**********************************************")
+    
+    def frenar(self):
+        print("La bicicleta se detendra cuando se ejerza presion en el freno")
+        print("**********************************************")
+    
+    def cambiarVelocidad(self):
+        print("Podra cambiar la relacion de los piñones para modificar la velocidad")
+        print("**********************************************")
+
+    def cambiarMarcha(self):
+        print("Podra cambiar la relacion de los piñones para modificar la marcha")
+        print("**********************************************")
+
+    def salto(self):
+        print("La bicicleta podra realizar saltos")
+        print("**********************************************")
+
+# instancias el objeto
+
+bici = bicicleta()
+
+print ("Cuenta con un marco", bici.marco)
+print ("Su tenedor es de ", bici.tenedor)
+print ("La clase de suspencion usada es de ", bici.suspencion)
+print ("Equipado con un manubrio ", bici.manubrio)
+print ("Diseñado con un agarre ", bici.agarresManubrio)
+print ("Llantas de ", bici.llantas)
+print ("Acompañado con un buje delantero", bici.bujeDelanterio)
+print ("Incorpora un buje trasero de ", bici.bujeTrasero)
+print ("Su manza es de ", bici.manzana)
+print ("Integrado con un ", bici.triplato)
+print ("Cuenta con una relacion ", bici.relacionTriplato)
+print ("Armada con una cadena ", bici.cadena)
+print ("Construida con pedales ", bici.pedales)
+print ("Para mayor seguridad tiene frenos ", bici.frenos)
+print ("Su manecilla es de ", bici.manecillaFreno)
+print ("Modelo: ", bici.modelo)
+print ("Material: ", bici.material)
+print ("Tiene una garantia de ", bici.material)
+
+# metodos
+
+print ('')
+print (bici.acelerar())
+print (bici.frenar())
+print (bici.cambiarVelocidad())
+print (bici.cambiarMarcha())
+print (bici.salto())
+
+
+# Producto : Teclado
+
+class tecladoLogi:
+
+    # contructor
+
+    def __init__(self):
+        self.dimensiones = "193,5 mm x 457,3 mm x 24 mm"
+        self.tipoConexion = "Bluetooth® de bajo consumo (Bluetooth 5.1)"
+        self.softwareConexion = "Logi Bolt"
+        self.radioAccion = "10 m"
+        self.cantidadBateria = 2
+        self.duracionBateria = 36
+        self.medidaDuracionBateria = "meses"
+        self.peso = 700
+        self.indicadorLuminoso = "Si"
+        self.compatibilidadSistemas = "Windows, Linux y Mac" 
+        self.receptorUSB = "Si"
+        self.contenidoCaja = "Manual y receptor usb"
+    
+    # metodos
+
+    def escribir(self):
+        print("**********************************************")
+        print("Al oprimir una tecla podra escribir")
+        print("**********************************************")
+
+    def borrarTexto(self):
+        print("Al oprimir la tecla delete eliminara una letra eliminara un caracter" )
+        print("**********************************************")
+    
+    def copiarTexto(self):
+        print("Al oprimir control mas la tecla C podra copiar el texto seleccionado")
+        print("**********************************************")
+
+    def pegarTexto(self):
+        print(" Al oprimir control mas la tecla P podra pegar el texto copiado")
+        print("**********************************************")
+    
+    def abrirProgramas(self):
+        print("Con cierta combinacion de teclas podra abrir el progrma de su eleccion")
+        print("**********************************************")
 
 
