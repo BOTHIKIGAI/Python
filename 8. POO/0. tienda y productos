@@ -53,6 +53,7 @@ class smartBand:
 
 
 # instanciar un objeto
+
 band = smartBand()
 
 print ("Las dimensiones del dispositivo son ", band.dimensiones)
@@ -137,7 +138,7 @@ class bicicleta:
         print("La bicicleta podra realizar saltos")
         print("**********************************************")
 
-# instancias el objeto
+# instanciar el objeto
 
 bici = bicicleta()
 
@@ -213,4 +214,27 @@ class tecladoLogi:
         print("Con cierta combinacion de teclas podra abrir el progrma de su eleccion")
         print("**********************************************")
 
+# instanciar el objeto
 
+teclado = tecladoLogi()
+
+print ("Las dimensiones del dispositivo son ", teclado.dimensiones)
+print ("La conexion es de tipo", teclado.tipoConexion)
+print ("El software de conexion es ", teclado.softwareConexion)
+print ("Puede conectarse con un despositivo a una distancia de ", teclado.radioAccion)
+print ("Tiene ", teclado.cantidadBateria, "baterias")
+print ("Las baterias duran ", teclado.duracionBateria,  teclado.medidaDuracionBateria)
+print ("Tiene un peso de", teclado.peso, "g")
+print ("Cuenta con indicadores luminosos: ", teclado.indicadorLuminoso)
+print ("Es compatible con", teclado.compatibilidadSistemas)
+print ("Tiene receptor usb:", teclado.receptorUSB)
+print ("La caja tiene", teclado.contenidoCaja)
+
+# metodos
+
+print ('')
+print (teclado.escribir())
+print (teclado.borrarTexto())
+print (teclado.copiarTexto())
+print (teclado.pegarTexto())
+print (teclado.abrirProgramas())
