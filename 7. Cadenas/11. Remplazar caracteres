@@ -1,0 +1,3 @@
+texto = ""
+texto_nuevo = texto.replace("\\" , "/")
+print (texto_nuevo)
