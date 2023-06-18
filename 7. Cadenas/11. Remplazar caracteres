@@ -1,3 +1,3 @@
-texto = ""
+texto = r"C:\Users\esteb\Desktop\base_datos\insercio_datos\tbl_correspondencia.csv"
 texto_nuevo = texto.replace("\\" , "/")
 print (texto_nuevo)
