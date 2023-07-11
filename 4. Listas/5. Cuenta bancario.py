@@ -68,7 +68,7 @@ def transaccionBancaria():
             estadoOperacion = False
             while estadoOperacion != True:
                 
-                montoRetirar = int(input("¿Cuanto dinero desea retirar?"))
+                montoRetirar = int(input("¿Cuanto dinero desea retirar? "))
 
                 if montoRetirar <= 0: 
                     print ("El monto ingresado es negativo o igual a cero, ingrese un monto mayor o igual a 1")
@@ -97,8 +97,42 @@ def transaccionBancaria():
                 else:
                     print("Error en el sistema")
                     estadoOperacion = True
+            
+        elif respuesta2 == 2:
+            print ("----------------------------------------------------------")
+            print ("Deposito")
+            print ("----------------------------------------------------------")
         
-        
+            estadoOperacion = False
+            while estadoOperacion != True:
+
+                montoDepositar = int(input("¿Cuanto dinero desea depositar?"))
+                cuentaBancariaDinero = cuentaBancariaDinero + montoDepositar
+                print ("----------------------------------------------------------")
+                print ("Cuenta", numeroCuentaBancaria)
+                print ("$", cuentaBancariaDinero )
+                print ("----------------------------------------------------------")
+                print ("Digite 1 para SI o digite 2 para NO")
+                respuesta2 = int(input( ))
+                print ("----------------------------------------------------------")
+
+                if respuesta2 != 1 or respuesta2 != 2:
+                    print ("----------------------------------------------------------")
+                    print ("Respuesta incorrecta")
+                    print ("----------------------------------------------------------")
+                    print ("¿Desea realizar otro deposito?")
+                    print ("Digite 1 para SI o digite 2 para NO")
+                    respuesta2 = int(input( ))
+                    print ("----------------------------------------------------------")
+
+                elif respuesta2 == 2:
+                    estadoOperacion = True
+                
+                else:
+                    print ("Error")
+                    break
+                    
+
 
         else:
             print("Fin")
