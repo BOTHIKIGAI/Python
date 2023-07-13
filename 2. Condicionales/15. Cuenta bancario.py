@@ -112,25 +112,18 @@ def transaccionBancaria():
                 print ("Cuenta", numeroCuentaBancaria)
                 print ("$", cuentaBancariaDinero )
                 print ("----------------------------------------------------------")
-                print ("Digite 1 para SI o digite 2 para NO")
-                respuesta2 = int(input( ))
-                print ("----------------------------------------------------------")
 
-                if respuesta2 != 1 or respuesta2 != 2:
-                    print ("----------------------------------------------------------")
-                    print ("Respuesta incorrecta")
-                    print ("----------------------------------------------------------")
-                    print ("¿Desea realizar otro deposito?")
-                    print ("Digite 1 para SI o digite 2 para NO")
-                    respuesta2 = int(input( ))
+                if montoDepositar <= 0:
+                    print ("No se puede depositar fondos negativos")
                     print ("----------------------------------------------------------")
 
-                elif respuesta2 == 2:
-                    estadoOperacion = True
-                
                 else:
-                    print ("Error")
-                    break
+                    print ("----------------------------------------------------------")
+                    print ("Operación Exitosa")
+                    print ("Balance de la cuenta: ", cuentaBancariaDinero)
+                    print ("----------------------------------------------------------")
+                    estadoOperacion = True
+                    
                     
 
 
