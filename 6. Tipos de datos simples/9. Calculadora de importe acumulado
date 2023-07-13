@@ -1,4 +1,81 @@
 """
 13 / 07 / 2023
 
+Problema
+
+Elabore un programa que calcule el importe acumulado que deben pagar los clientes de una 
+institución bancaria en un número de periodos. Luego el programa debe pedir el capital, la tasa 
+de interés mensual y el número de periodos. Averigüe la fórmula para calcularlos. Valide y de 
+mensajes de error cuando considere.
+
+Requisitos
+
+1. Calcular el importe calculado mediante numero de periodos
+2. Pedir el capital
+3. Pedir la tasa de interes mensual
+4. Numero de periodos
+
+Analisis
+
+1. El importe de pago es la cantidad de dinero que se paga por un producto o servicio.
+   Es el valoren dinero que se le asigna a un credito, deuda o saldo. 
+
+   En base a esta información puedo concluir que el importe de pago es el monot del prestamo y los
+   intereses que se generan por el mismo.
+
+2. El capital es el prestamo, por lo cual debo solicitarlo al inicio.
+
+3. La tasa de interes mensual es el costo que se paga por el uso del dinero.
+
+4. Numero de periodos de tiempo es la manera en la cual se dividen los pagos y el como se aplica el interes mensualmente
+
+
 """
+
+# Inicio
+
+def importePago():
+
+    # Solicitud de datos
+
+    print ("----------------------------------------------------------")
+    capital = input("Ingrese el capital solicitado: ")
+    tasaInteresMensual = input("Ingrese el interes mensual: ")
+    numeroPeriodos = input("Numero de periodos de pagos (meses): ")
+    print ("----------------------------------------------------------")
+
+    # Validación de datos
+
+        # Validación del capital
+
+    if capital != float and capital != int or capital <= 0:
+        print ("Error en el dato capital")
+        print ("----------------------------------------------------------")
+        print ("Ingresaste un dato diferente a un numero o el valor es menor o igual a 0 ")
+        print ("----------------------------------------------------------")
+        capital = (input("Ingrese el capital solicitado: "))
+
+        if capital == float
+            
+
+        print ("----------------------------------------------------------")
+    
+
+    print ("Capital: ", capital)
+    print ("----------------------------------------------------------")
+
+        # Validación de la tasa Interes mensual
+
+    if tasaInteresMensual != float or tasaInteresMensual <= 0 or tasaInteresMensual != float:
+        print ("Ingresaste un dato diferente a un numero o el valor es menor o igual a 0 ")
+        print ("----------------------------------------------------------")
+        tasaInteresMensual = input("Ingrese el interes mensual: ")
+        print ("----------------------------------------------------------")
+
+    else:
+        print ("Tasa de interes mensual: ", tasaInteresMensual)
+        print ("----------------------------------------------------------")
+
+
+
+importePago()
