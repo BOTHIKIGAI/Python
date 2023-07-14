@@ -34,48 +34,56 @@ Analisis
 
 # Inicio
 
-def importePago():
 
     # Solicitud de datos
 
+print ("----------------------------------------------------------")
+capital = float(input("Ingrese el capital solicitado: "))
+tasaInteresMensual = float(input("Ingrese el interes mensual: "))
+numeroPeriodos = float(input("Numero de periodos de pagos (meses): "))
+print ("----------------------------------------------------------")
+
+# Validación de datos
+
+    # Validación del capital
+
+if capital <= 0:
+    print ("Error en el dato capital")
     print ("----------------------------------------------------------")
-    capital = input("Ingrese el capital solicitado: ")
-    tasaInteresMensual = input("Ingrese el interes mensual: ")
-    numeroPeriodos = input("Numero de periodos de pagos (meses): ")
+    print ("Ingresaste un dato diferente a un numero o el valor es menor o igual a 0 ")
     print ("----------------------------------------------------------")
-
-    # Validación de datos
-
-        # Validación del capital
-
-    if capital != float and capital != int or capital <= 0:
-        print ("Error en el dato capital")
-        print ("----------------------------------------------------------")
-        print ("Ingresaste un dato diferente a un numero o el valor es menor o igual a 0 ")
-        print ("----------------------------------------------------------")
-        capital = (input("Ingrese el capital solicitado: "))
-
-        if capital == float
-            
-
-        print ("----------------------------------------------------------")
+    capital = (input("Ingrese el capital solicitado: "))
     
 
-    print ("Capital: ", capital)
-    print ("----------------------------------------------------------")
+print ("Capital: ", capital)
+print ("----------------------------------------------------------")
 
         # Validación de la tasa Interes mensual
 
-    if tasaInteresMensual != float or tasaInteresMensual <= 0 or tasaInteresMensual != float:
-        print ("Ingresaste un dato diferente a un numero o el valor es menor o igual a 0 ")
-        print ("----------------------------------------------------------")
-        tasaInteresMensual = input("Ingrese el interes mensual: ")
-        print ("----------------------------------------------------------")
+if tasaInteresMensual <= 0:
+    print ("Ingresaste un dato diferente a un numero o el valor es menor o igual a 0 ")
+    print ("----------------------------------------------------------")
+    tasaInteresMensual = input("Ingrese el interes mensual: ")
+    print ("----------------------------------------------------------")
 
-    else:
-        print ("Tasa de interes mensual: ", tasaInteresMensual)
-        print ("----------------------------------------------------------")
+else:
+    print ("Tasa de interes mensual: ", tasaInteresMensual)
+    print ("----------------------------------------------------------")
 
+if numeroPeriodos <= 0:
+    print ("Ingresaste un dato diferente a un numero o el valor es menor o igual a 0 ")
+    print ("----------------------------------------------------------")
+    numeroPeriodos = input("Ingrese el numero de peridos: ")
+    print ("----------------------------------------------------------")
+    
+else:
+    print ("Numero de periodos: ", numeroPeriodos)
+    print ("----------------------------------------------------------")
+    
+# calcular importe
 
+interes = (tasaInteresMensual / 100)
+cuotaMensual = (capital * interes) / (1-(1 + interes) ** (-numeroPeriodos))
+montoTotal = cuotaMensual * numeroPeriodos
 
-importePago()
+print ("El importe seria de $", round(montoTotal, 2))    
