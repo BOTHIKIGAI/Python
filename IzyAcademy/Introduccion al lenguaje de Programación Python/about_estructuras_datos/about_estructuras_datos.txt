@@ -1,0 +1,4 @@
+En terminos simples, las estructuras de datos son una clase de variable especial,
+la cual podemos usar para almacenar una o más variables individuales.
+
+Las mas usadas son: lista(tupla), diccionarios (dictionaries) y conjuntos(sets).
