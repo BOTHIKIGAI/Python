@@ -26,4 +26,6 @@ print(set_numeros);
 """ Remover elementos de un conjunto """
 
 set_numeros.remove(2); # Remover un valor
-set_numeros.pop(4); # Remover un valor mediante pop
+print(set_numeros);
+set_numeros.discard(4); # Remover un valor mediante discard
+print(set_numeros);
