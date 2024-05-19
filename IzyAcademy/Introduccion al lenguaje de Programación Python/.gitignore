@@ -1,0 +1,10 @@
+# .gitignore
+
+# Ignora todos los archivos .log
+*.log
+
+# Ignora todos los archivos en el directorio 'temp'
+temp/
+
+# Ignora el archivo especifico 'debug.log'
+debug.log
