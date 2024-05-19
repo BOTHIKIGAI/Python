@@ -1,0 +1,29 @@
+¿Cual es la grafica mas adecuada si deseo ver el cambio de valor de una variable en el tiempo?
+a. Pie
+b. line (correcta)
+c. Scanner
+d. Histogram
+
+Respecto a los conjuntos, podemos decir que...
+a. Admiten elementos repetidos
+b. El orden es importante
+c. Python no admite conjuntos
+d. No admiten elementos repetidos (correcta)
+
+Python es un lenguaje
+a. Compilado y gratuito
+b. Interpretado y de pago
+c. Compilado y de pago
+d. Interpretado y de pago (correcta)
+
+¿Cual es la función que no se le define un nombre y se usa temporalmente?
+a. SirName
+b. Name
+c. Lambda (correcta)
+d. Map
+
+Matplotlib es una libreria...
+a. Es una libreria de calculo matricial
+b. Es una libreria de calculo simbolico
+d. Es una libreria de visualización (correcta)
+d. Es una libreria de machine learning
