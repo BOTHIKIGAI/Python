@@ -1,18 +1,26 @@
-saludo_1 = "Hello World";
-saludo_2 = "hello python";
+hello_1 = "Hello World"
+hello_2 = "hello python"
 
 """ Lower and Upper """
-print(saludo_1.lower()); # todo a minusculas
-print(saludo_1.upper()); # todo a mayousulas
-print(saludo_2.capitalize()); # primera letra a mayusculas
-print(saludo_2.index("a")); # busca la coincidencia y retorna el string donde inicia, si no encuentra nada no retorna nada
-print(saludo_2.index("python"));
+# all to lower case
+print(hello_1.lower())
 
-saludo_3 = saludo_2.replace("hello", "Holaa"); # remplaza la palabra indicada en el primer parametro por la segunda
-print(saludo_3);
+# all to upper case
+print(hello_1.upper())
 
-list_saludo_2 = saludo_2.split(" ");
-print(list_saludo_2);
+# all to capitalize
+print(hello_2.capitalize())
 
-list_saludo_2 = saludo_2.split("python");
-print(list_saludo_2);
+# return where start the letter/word in a string and return the index
+print(hello_2.index("p"))
+print(hello_2.index("python"))
+
+# replace the word
+hello_3 = hello_2.replace("hello", "Hi")
+print(hello_3)
+
+list_hello_2 = hello_2.split(" ")
+print(list_hello_2)
+
+list_hello_2 = hello_2.split("python")
+print(list_hello_2)
