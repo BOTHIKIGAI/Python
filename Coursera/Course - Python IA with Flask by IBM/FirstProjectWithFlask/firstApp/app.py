@@ -36,5 +36,16 @@ def handle_params():
         return 'Some parameters are missing'
 
 
+@app.route('/length/<int:data>')
+def get_data(data):
+    try:
+        if data > 0:
+            return {'message': f'Your number is {data}'}
+        else:
+            return {'message': 'Data is empy'}, 500
+    except NameError:
+        return {'message': 'Data not found'}, 404
+
+
 if __name__ == '__main__':
     app.run('127.0.0.1', port=5555, debug=True)
