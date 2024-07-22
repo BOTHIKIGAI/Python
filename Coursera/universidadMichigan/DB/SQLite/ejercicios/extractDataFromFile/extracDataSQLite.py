@@ -1,7 +1,7 @@
 import sqlite3
 import re
 
-fhand = open(r'..\..\..\assets\plaintxt\mbox.txt')
+fhand = open(r'..\..\..\..\assets\plaintxt\mbox.txt')
 conn = sqlite3.connect('DB2.sqlite')
 cur = conn.cursor()
 
